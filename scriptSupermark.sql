@@ -42,3 +42,21 @@ CREATE TABLE usuario (
   direccion_usuario varchar(45),
   premio_registro varchar(20),
   FOREIGN KEY (id_tipo_usuario) REFERENCES tipo_usuario (id_tipo_usuario));
+
+insert into categoria values (1, 'comestibles');
+insert into categoria values (2, 'limpieza');
+insert into categoria values (3, 'bebidas');
+insert into categoria values (4, 'lacteos');
+
+insert into tipo_usuario values (1, 'admin');
+insert into tipo_usuario values (2, 'cliente');
+
+insert into producto values (4, 'dulce de leche', 20, 50.0, 4);
+insert into producto values (2, 'detegente', 50, 100, 2);
+insert into producto values (3, 'sprite', 100, 200, 3);
+insert into producto values (5, 'galletas oreo', 20, 150, 1);
+
+insert into usuario values (1, 'sofia lamarca', 'sofiL@gmail.com', '1234', 2, false, 'coronel di pascuo 3382', 'no');
+insert into usuario values (2, 'pepe pollo', 'pepepollo@gmail.com', '1234', 1, true, 'bora bora, a la vuelta', 'si');
+insert into usuario values (3, 'jane hopper', 'once@gmail.com', '1234', 1, false, 'orfanato', 'si');
+insert into usuario values (4, 'jeremias', 'jere@gmail.com', '1234', 1, true, 'avenida belgrano 12', 'no');
