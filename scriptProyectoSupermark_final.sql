@@ -6,8 +6,8 @@ CREATE TABLE carrito (
   id_pedido int,
   id_producto int,
   primary key (id_carrito),
-  KEY id_venta (id_pedido),
-  KEY id_producto (id_producto));
+  FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido),
+  FOREIGN KEY (id_producto) REFERENCES producto (id_producto));
 
 CREATE TABLE categoria (
   id_categoria_prod int auto_increment,
